@@ -133,9 +133,22 @@ h1 {
     height: 250px;
 }
 
+@media (max-width: 600px) {
+    .resize {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
 .resize img {
     width: 16.6%;
     object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .resize img {
+        width: 100%;
+    }
 }
 
 footer {
