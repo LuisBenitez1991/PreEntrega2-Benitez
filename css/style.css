@@ -1,0 +1,147 @@
+
+* {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;  
+} 
+
+/*Grilla*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+    " header   "
+    " main     "
+    " footer   "  
+    ;  
+    min-height: 100vh;                        
+} 
+
+.nav {
+    grid-area: header;
+}
+
+.galeriagrid {
+    grid-area: main;
+}
+
+.pie {
+    grid-area: footer;
+}
+
+/*fin grilla*/
+
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(245, 241, 244);
+}
+
+
+
+#carouselExample {
+    max-height: 100vh;
+    overflow:hidden;
+}
+
+.galeriaimagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.marca {
+    display: flex;
+    color: white;
+}
+
+
+
+.menulist{
+    display: flex;
+    width: 200px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 8rem;
+    justify-content: center;
+}
+
+/*Media Queries*/
+
+
+
+/*Fin Media Queries*/
+
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(232, 108, 205);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 2rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10vh;
+    justify-content: space-around;
+}
+
+.galeria img {
+    display: flex;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+    color: rgb(6, 6, 6);
+} 
+
+.paragraph {
+    display: flex;
+    font-style: normal;
+    font-size: medium;
+    justify-content: center;
+}
+
+.resize { 
+    display: flex;
+    height: 250px;
+}
+
+.resize img {
+    width: 16.6%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgb(180, 124, 178);
+    list-style: none;
+}
+
+
+
