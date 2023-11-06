@@ -39,7 +39,22 @@ body {
     background-color: rgb(245, 241, 244);
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(232, 108, 205);
+}
 
+.nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 2rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+}
 
 #carouselExample {
     max-height: 100vh;
@@ -61,8 +76,6 @@ body {
     color: white;
 }
 
-
-
 .menulist{
     display: flex;
     width: 200px;
@@ -77,28 +90,7 @@ main {
     justify-content: center;
 }
 
-/*Media Queries*/
 
-
-
-/*Fin Media Queries*/
-
-.nav {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(232, 108, 205);
-}
-
-.nav ul {
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    gap: 2rem;
-}
-
-.nav ul li a {
-    text-decoration: none;
-}
 
 .galeria {
     display: flex;
@@ -133,6 +125,7 @@ h1 {
     height: 250px;
 }
 
+/*Media Queries*/
 @media (max-width: 600px) {
     .resize {
         flex-direction: column;
@@ -145,6 +138,7 @@ h1 {
     object-fit: cover;
 }
 
+/*Media Queries*/
 @media (max-width: 600px) {
     .resize img {
         width: 100%;
